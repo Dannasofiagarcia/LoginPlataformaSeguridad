@@ -98,7 +98,6 @@ public class LoginController {
 		dialog.setHeaderText("Look, a New Password Dialog");
 		dialog.setContentText("Escriba la contrasaeña nueva");
 
-		// Traditional way to get the response value.
 		Optional<String> result = dialog.showAndWait();
 		if (result.isPresent()) {
 			try {
@@ -217,8 +216,6 @@ public class LoginController {
 
 			String line = null;
 
-			// Read from the original file and write to the new
-			// unless content matches data to be removed.
 			while ((line = br.readLine()) != null) {
 				if (!line.split(",")[0].equals(usuario)) {
 					pw.println(line);
@@ -286,8 +283,6 @@ public class LoginController {
 			String line = null;
 			String usuarios = "";
 
-			// Read from the original file and write to the new
-			// unless content matches data to be removed.
 			while ((line = br.readLine()) != null) {
 				String datos[] = line.split(",");
 				usuarios += line.split(",")[0] + "\n";
@@ -326,7 +321,6 @@ public class LoginController {
 		expContent.add(label, 0, 0);
 		expContent.add(textArea, 0, 1);
 
-		// Set expandable Exception into the dialog pane.
 		alert.getDialogPane().setExpandableContent(expContent);
 
 		alert.showAndWait();
