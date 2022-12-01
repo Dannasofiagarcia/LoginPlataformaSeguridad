@@ -18,6 +18,6 @@ En el frontend tenemos dos opciones al momento de iniciar el programa: podemos i
 
 ## Developed by 🛠
 
-* *Danna Sofia Garcia* [Danna](https://github.com/Dannasofiagarcia)
-* *Christian David Flor*  [Christian](https://github.com/ChristianFlor)
-* *Jhonnier Isaza Gonzalez*  [Jhonnier](https://github.com/Jhonnier20)
+* [*Danna Sofia Garcia*](https://github.com/Dannasofiagarcia)
+* [*Christian David Flor*](https://github.com/ChristianFlor)
+* [*Jhonnier Isaza Gonzalez*](https://github.com/Jhonnier20)
