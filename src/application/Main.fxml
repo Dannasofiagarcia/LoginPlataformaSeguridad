@@ -6,7 +6,6 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="267.0" prefWidth="429.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <Label layoutX="15.0" layoutY="30.0" text="Bienvenido,">
@@ -33,15 +32,6 @@
             </Button>
          </children>
       </Pane>
-      <Pane fx:id="administradorPane" layoutX="71.0" layoutY="85.0" prefHeight="168.0" prefWidth="288.0" visible="false">
-         <children>
-            <Button fx:id="consultarUsuarioBtn" layoutX="61.0" layoutY="51.0" mnemonicParsing="false" onAction="#consultarUsuario" text="Consultar usuario">
-               <font>
-                  <Font name="Arial" size="18.0" />
-               </font>
-            </Button>
-         </children>
-      </Pane>
       <Pane fx:id="inicioPane" layoutX="71.0" layoutY="85.0" prefHeight="168.0" prefWidth="288.0">
          <children>
             <Button fx:id="iniciarSesionBtn" layoutX="79.0" layoutY="25.0" mnemonicParsing="false" onAction="#iniciarSesion" text="Iniciar sesión">
@@ -56,28 +46,33 @@
             </Button>
          </children>
       </Pane>
-      <Pane fx:id="consultaPane" layoutX="29.0" layoutY="77.0" prefHeight="176.0" prefWidth="386.0" visible="false">
+      <Pane fx:id="administradorPane" layoutX="29.0" layoutY="77.0" prefHeight="176.0" prefWidth="386.0" visible="false">
          <children>
-            <Button fx:id="eliminarUsuarioBtn" layoutX="148.0" layoutY="98.0" mnemonicParsing="false" onAction="#eliminarUsuario" text="Eliminar">
+            <Button fx:id="eliminarUsuarioBtn" layoutX="35.0" layoutY="88.0" mnemonicParsing="false" onAction="#eliminarUsuario" text="Eliminar">
                <font>
                   <Font name="Arial" size="18.0" />
                </font>
             </Button>
-            <Button fx:id="contraBlancoBtn" layoutX="93.0" layoutY="140.0" mnemonicParsing="false" onAction="#contraBlanco" text="Contraseña en blanco">
+            <Button fx:id="contraBlancoBtn" layoutX="155.0" layoutY="88.0" mnemonicParsing="false" onAction="#contraBlanco" text="Contraseña en blanco">
                <font>
                   <Font name="Arial" size="18.0" />
                </font>
             </Button>
-            <Label layoutX="78.0" layoutY="14.0" text="Ingrese el nombre del usuario">
+            <Label layoutX="78.0" layoutY="12.0" text="Ingrese el nombre del usuario">
                <font>
                   <Font name="Arial" size="18.0" />
                </font>
             </Label>
-            <TextField fx:id="nombreUsuarioTF" layoutX="80.0" layoutY="45.0" prefHeight="39.0" prefWidth="227.0">
+            <TextField fx:id="nombreUsuarioTF" layoutX="80.0" layoutY="41.0" prefHeight="39.0" prefWidth="227.0">
                <font>
                   <Font size="18.0" />
                </font>
             </TextField>
+            <Button fx:id="consultarUsuarioBtn" layoutX="114.0" layoutY="136.0" mnemonicParsing="false" onAction="#consultarUsuario" text="Consultar usuarios">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Button>
          </children>
       </Pane>
    </children>

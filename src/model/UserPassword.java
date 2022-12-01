@@ -45,7 +45,7 @@ public class UserPassword {
 		}
 	}
 
-	public static boolean validatePassword(String originalPassword, String usuario)
+	public static boolean validatePassword(String passwordIngresada, String usuario)
 			throws NoSuchAlgorithmException, InvalidKeySpecException {
 
 		try {
@@ -77,7 +77,7 @@ public class UserPassword {
 			byte[] salt = fromHex(parts[1]);
 			byte[] hash = fromHex(parts[2]);
 
-			PBEKeySpec spec = new PBEKeySpec(originalPassword.toCharArray(), salt, iterations, hash.length * 8);
+			PBEKeySpec spec = new PBEKeySpec(passwordIngresada.toCharArray(), salt, iterations, hash.length * 8);
 
 			SecretKeyFactory skf = SecretKeyFactory.getInstance("PBKDF2WithHmacSHA1");
 
